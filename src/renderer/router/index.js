@@ -7,17 +7,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default,
-      meta: {
-        keepAlive: true
-      }
-    },
-    {
-      path: '/foo',
-      name: 'foo-page',
-      component: require('@/components/FooPage').default
-      ,
+      name: 'root-page',
+      component: require('@/components/app.vue').default,
       meta: {
         keepAlive: true
       }
